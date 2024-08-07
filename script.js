@@ -76,8 +76,8 @@ function updateWeatherCard(data) {
     document.querySelector('.description').textContent = data.weather[0].description;
     document.querySelector('.min-max').innerHTML = `Min: ${Math.round(data.main.temp_min - 273.15)}&deg;C / Max: ${Math.round(data.main.temp_max - 273.15)}&deg;C`;
     document.querySelector('.humidity').textContent = `Humidity: ${data.main.humidity}%`;
-    document.getElementById('weather-icon').src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    document.getElementById('favicon').href = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    document.getElementById('weather-icon').src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    document.getElementById('favicon').href = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     document.getElementById('city-input').value = '';
 }
 
