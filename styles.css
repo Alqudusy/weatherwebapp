@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url('images (1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1cm;
+}
+
+.container{
+    background-color: rgba(0, 0, 50, 0.8); /* Dark blue transparent background */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Cyan shadow */
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover{
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.search-box{
+    padding: 20px;
+    background: rgba(0, 100, 150, 0.9); /* Dark cyan background */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+}
+
+.search-box input{
+    width: 70%; /* Adjust width to make space for button */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.5); /* Cyan shadow */
+    transition: box-shadow 0.3s ease-in-out;
+    margin-right: 10px; /* Space between input and button */
+}
+
+.search-box input:focus{
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.8); /* Brighter cyan shadow on focus */
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00FFFF; /* Cyan background */
+    color: #000; /* Black text */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#search-button:hover {
+    background-color: #00CED1; /* Darker cyan on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.weather-card{
+    padding: 20px;
+    text-align: center;
+    color: #00FFFF; /* Cyan text */
+}
+
+.city-name{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle black shadow */
+}
+
+.weather-icon img{
+    width: 100px; /* Fixed size */
+    animation: rotate 5s linear infinite; /* Rotate animation */
+}
+
+.temperature{
+    font-size: 48px;
+    margin: 10px 0;
+    color: #FFFF00; /* Yellow text */
+    animation: pulse 2s infinite; /* Pulse animation */
+}
+
+.description{
+    font-size: 18px;
+    color: #00FF00; /* Green text */
+}
+
+.details{
+    margin-top: 20px;
+    color: #FFFFFF; /* White text */
+}
+
+.min-max, .humidity{
+    font-size: 24px;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
