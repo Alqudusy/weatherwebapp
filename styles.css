@@ -2,11 +2,12 @@ body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
     background-repeat: repeat;
     background-size: 100%, 100%;
     background-position: center;
-    margin-top: 1cm;
     background-image: url('images.jpg');
 }
 
